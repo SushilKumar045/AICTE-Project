@@ -44,8 +44,8 @@ def predict_note_authentication(UserID, Gender, Age, EstimatedSalary):
 def main():
     html_temp = """
     <div style="background-color:blue;padding:10px">
-    <h2 style="color:white;text-align:center;">Poornima Institute of Engineering & Technology</h2>
-    <h3 style="color:white;text-align:center;">Department of Computer Engineering</h3>
+    <h2 style="color:white;text-align:center;">AICTE IBM Internship</h2>
+    <h3 style="color:white;text-align:center;">Artificial Intelligence and Cloud Internship</h3>
     <h4 style="color:white;text-align:center;">Internship Project Deployment</h4>
     </div>
     """
@@ -62,7 +62,7 @@ def main():
         st.success('Model has predicted: {}'.format(result))
     if st.button("About"):
         st.subheader("Developed by Sushil Kumar")
-        st.subheader("Student, Department of Artificial Intelligence and Data Science")
+        st.subheader("Artificial Intelligence and Data Science Engineer")
 
 if __name__ == '__main__':
     main()
