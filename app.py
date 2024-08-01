@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-st.set_option('deprecation.showfileUploaderEncoding', False)
+# st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
 pickle_in = open("Project3_Decision_Tree_model.pkl","rb")
 model=pickle.load(pickle_in)
