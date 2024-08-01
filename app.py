@@ -4,10 +4,18 @@ import pickle
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+
+import joblib
+# Save the model
+joblib.dump(model, 'Project3_Decision_Tree_model.pkl')
+# Load the model
+model = joblib.load('Project3_Decision_Tree_model.pkl')
+
 # st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-pickle_in = open("Project3_Decision_Tree_model.pkl","rb")
-model=pickle.load(pickle_in)
+# pickle_in = open("Project3_Decision_Tree_model.pkl","rb")
+# model=pickle.load(pickle_in)
+
 dataset= pd.read_csv('Social_Network_Ads.csv')
 X = dataset.iloc[:, 1:4].values
 from sklearn.preprocessing import LabelEncoder
